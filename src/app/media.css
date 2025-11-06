@@ -1,0 +1,27 @@
+
+@media (max-width: 768px) {
+ .home-page__title{
+    font-size: 1.6rem !important;
+ }
+ .rolling-image{
+   width: 30px !important;
+   height: 30px !important;
+ }
+ 
+ 
+}
+
+@media (max-width: 939px) {
+ .home-page__title{
+    font-size: 3.2rem;
+ }
+.wrapper-inner{
+  flex-direction: row !important;
+  justify-content: center !important;
+}
+.logo-wrapper{
+  margin-left: 13px;
+  margin-right: 13px;
+}
+}
+
