@@ -6,6 +6,8 @@ import Model from "../../components/model.js";
 import Button from "../../components/button.js";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import Link from "next/link.js";
+
 
 export default function ProfilePage() {
 const [index, setIndex] = useState(0);
@@ -90,9 +92,9 @@ const [index, setIndex] = useState(0);
            
                    <div className="wrapper-inner d-flex text-end">
                     <div className="logo-wrapper pb-0 pb-lg-4">
-                      <a href="">
+                      <Link href="/404-not-found">
                         <img src="/assets/github.png" className="" width={50} alt="" />
-                      </a>
+                      </Link>
                     </div>
                     <div className="logo-wrapper">
                       <a href="">
