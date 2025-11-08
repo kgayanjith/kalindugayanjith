@@ -38,8 +38,8 @@ export default function Navbar() {
                    Experience
                   </a>
                 </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#">
+                <li className="nav">
+                  <a className="nav-link" href="/">
                     <span><img src="assets/logo2.png" width={100} alt="" /></span>
                   </a>
                 </li>

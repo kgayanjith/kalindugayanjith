@@ -1,6 +1,6 @@
 :root {
-	--red: #d8432a;
-	--black: #0e140a;
+  --red: #d8432a;
+  --black: #0e140a;
 }
 .stack {
   font-family: "Stack Sans Notch", sans-serif !important;
@@ -8,7 +8,6 @@
 body {
   font-family: "Mona Sans", sans-serif !important;
   background-color: black !important;
-  
 }
 .home-page {
   height: 100vh;
@@ -30,7 +29,7 @@ body {
   flex-direction: column;
   animation: wordSlider 21s infinite cubic-bezier(0.9, 0.01, 0.3, 0.99);
 }
-#navbarNav{
+#navbarNav {
   background-color: black !important;
 }
 .home-page__title {
@@ -128,18 +127,18 @@ body {
   }
 }
 
-.nav-wrapper{
+.nav-wrapper {
   background-color: transparent !important;
 }
-.navbar-nav{
+.navbar-nav {
   background-color: black !important;
-  border:1px solid !important;
+  border: 1px solid !important;
   border-color: rgb(38, 38, 38) !important;
 }
-.navbar-nav{
+.navbar-nav {
   flex-direction: row !important;
 }
-.navbar-nav a{
+.navbar-nav a {
   text-decoration: none !important;
   color: white !important;
 }
@@ -164,40 +163,42 @@ body {
   width: 100%;
 }
 
-.wrapper-inner{
+.wrapper-inner {
   flex-direction: column;
 }
-.tag-lilne-pro{
-  color: #D9ECFF !important;
-  
+.tag-lilne-pro {
+  color: #d9ecff !important;
 }
-.tag-lilne-pro span{
+.tag-lilne-pro span {
   background-color: #282732 !important;
 }
-#navbarNav{
+#navbarNav {
   background-color: transparent !important;
 }
 @property --a {
   syntax: "<angle>";
   inherits: false;
-  initial-value: 0deg; 
+  initial-value: 0deg;
 }
 @property --i {
   syntax: "<number>";
   inherits: false;
-  initial-value: 0; 
+  initial-value: 0;
 }
 .project-img-wrapper {
-  
   border-radius: 30px;
   border: 1px solid #ccc;
   padding: 10px; /* control the gap */
-  mask: 
-    conic-gradient(#000 0 0) content-box,
-    linear-gradient(calc(mod(var(--a),180deg)*var(--i) + var(--_a,45deg)),
-      #0000 30%,#000 40% 60%,#0000 70%) subtract,
+  mask: conic-gradient(#000 0 0) content-box,
+    linear-gradient(
+        calc(mod(var(--a), 180deg) * var(--i) + var(--_a, 45deg)),
+        #0000 30%,
+        #000 40% 60%,
+        #0000 70%
+      )
+      subtract,
     conic-gradient(#000 0 0) padding-box;
-  transition: --i .5s,--a 0s .5s;
+  transition: --i 0.5s, --a 0s 0.5s;
   cursor: pointer;
 }
 .project-img-wrapper.alt {
@@ -205,15 +206,28 @@ body {
 }
 .project-img-wrapper:hover {
   --i: 1;
-  --a: 15turn; 
-  transition: --i 0s,--a 30s linear;
+  --a: 15turn;
+  transition: --i 0s, --a 30s linear;
 }
 .project-img-wrapper:hover img {
   transform: scale(1.05);
   transition: 0.5s ease-in-out;
 }
 .project-img-wrapper img {
-  
   transition: 0.5s ease-in-out;
 }
+.company-logo-wrapper {
+  border: 1px solid !important;
+  border-color: rgb(38, 38, 38) !important;
+}
+.vertical-bar {
+  width: 2px; /* thickness of the line */
+  background-color: white; /* line color */
+  flex-grow: 1; /* fill the remaining vertical space */
+}
 
+.flexing-col{
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
