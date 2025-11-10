@@ -17,7 +17,7 @@ export const bio =`Hi, I’m Kalindu Gayanjith, a Full-Stack Developer from Sri
                   passionate about developing solutions that are not only
                   efficient under the hood but also deliver smooth, engaging
                   user experiences. My expertise spans across React, Vue.js,
-                  Next.js, Laravel, and Node.js, allowing me to handle
+                  Next.js, Laravel, and MySQL, allowing me to handle
                   everything from front-end interfaces to back-end systems with
                   confidence. I enjoy transforming ideas into scalable,
                   high-performing products that align with real user needs. I

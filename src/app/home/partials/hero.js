@@ -44,7 +44,7 @@ const [index, setIndex] = useState(0);
           style={{ zIndex: 9999 }}
         >
           <div className="col-lg-10">
-            <div className=" container hero-text ps-md-5">
+            <div className=" container hero-text ps-md-1 ps-lg-4">
               <h1 className="home-page__title d-flex align-items-center position-relative">
                 Building Your
                 <span className=" ps-3">
