@@ -11,9 +11,9 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function ProfilePage() {
   const sectionRef = useRef(null);
-  const rydeRef = useRef(null);
-  const libraryRef = useRef(null);
-  const ycDirectoryRef = useRef(null);
+  const profileRef = useRef(null);
+  const nameRef = useRef(null);
+  const bioRef = useRef(null);
   const counterRef = useRef(null);
   const countersRef = useRef([]);
 
@@ -26,7 +26,7 @@ export default function ProfilePage() {
     );
 
     // Animations for each app showcase
-    const cards = [rydeRef.current, libraryRef.current, ycDirectoryRef.current];
+    const cards = [profileRef.current, nameRef.current, bioRef.current];
 
     cards.forEach((card, index) => {
       gsap.fromTo(
@@ -84,7 +84,7 @@ export default function ProfilePage() {
             </h2>
           </div>
           <div className="row justify-content-center pt-2">
-            <div className="col-10 col-md-4 col-lg-3" ref={rydeRef}>
+            <div className="col-10 col-md-4 col-lg-3" ref={profileRef}>
               <div className="text-center">
                 <div className="imge-wrapper border rounded-circle overflow-hidden p-2 border-2">
                   <img
@@ -95,7 +95,7 @@ export default function ProfilePage() {
                 </div>
               </div>
             </div>
-            <div className="wrapper-tag pt-4 text-center" ref={libraryRef}>
+            <div className="wrapper-tag pt-4 text-center" ref={nameRef}>
               <p className="fs-3 text-white stack">Kalindu Gayanjith</p>
               <p className="tag-lilne-pro">
                 <span className="px-4 py-1 rounded-5">
@@ -104,7 +104,7 @@ export default function ProfilePage() {
               </p>
             </div>
           </div>
-          <div className="row text-center" ref={ycDirectoryRef}>
+          <div className="row text-center" ref={bioRef}>
             <div className="col-md-10 col-lg-8 justify-content-center mx-auto pt-4 text-white">
               <div className="overview-text">
                 <p>
