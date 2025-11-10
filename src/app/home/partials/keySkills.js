@@ -198,6 +198,15 @@ export default function keySkills() {
                     </div>
                     <div className="col-md-4 col-lg-2 col-3 mb-4 mb-lg-2">
                       <div className="icon-wrapper p-3">
+                        <img
+                          src="assets/css.png"
+                          className="w-100"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <div className="col-md-4 col-lg-2 col-3 mb-4 mb-lg-2">
+                      <div className="icon-wrapper p-3">
                         <img src="assets/figma.png" className="w-100" alt="" />
                       </div>
                     </div>
