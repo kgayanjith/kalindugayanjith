@@ -264,7 +264,7 @@ body {
 .icon-wrapper:hover::before {
   left: 100%;
 }
-.skill-border {
+.skill-border, .wrapper-slider {
   border: 1px solid !important;
   border-color: rgb(38, 38, 38) !important;
 }
@@ -278,4 +278,29 @@ body {
   border-color: rgb(255, 255, 255) !important;
   transition: 0.3s ease-in-out;
   cursor: pointer;
+}
+.image-3d {
+  perspective: 1000px; /* adds depth */
+  display: inline-block;
+  
+}
+.image-3d img {
+  border-radius: 12px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  transform: rotateY(0deg) rotateX(0deg);
+  object-fit: contain;
+  border-radius: 50%;
+
+}
+.image-3d:hover img {
+  transform: rotateY(15deg) rotateX(10deg) scale(1.05);
+}
+.react-multi-carousel-list  {
+  padding-bottom: 2rem !important;
+}
+.react-multi-carousel-dot--active button {
+  width: 30px !important;      /* active dot width */
+   /* keep height same if needed */
+  background-color: black;
+  border-radius: 18px !important;
 }

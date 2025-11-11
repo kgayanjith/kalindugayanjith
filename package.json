@@ -20,6 +20,7 @@
     "react-countup": "^6.5.3",
     "react-dom": "19.2.0",
     "react-fast-marquee": "^1.6.5",
+    "react-multi-carousel": "^2.8.6",
     "three": "^0.181.0",
     "typewriter-effect": "^2.22.0",
     "vanta": "^0.5.24"
