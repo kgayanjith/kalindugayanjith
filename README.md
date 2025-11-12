@@ -5,7 +5,7 @@
 
 <!-- Profile Banner -->
 <p align="center">
-  <img src="https://i.imgur.com/zYvxJX5.gif" width="100%" alt="Banner"/>
+  <img src="[https://i.imgur.com/zYvxJX5.gif](https://i.ibb.co/PDvY0F2/github-banner-dark.gif)" width="100%" alt="Banner"/>
 </p>
 
 ---
