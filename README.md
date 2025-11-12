@@ -99,10 +99,8 @@
 
 ---
 
-<!-- Snake Animation -->
-##  My Contributions
 <p align="center">
-  <img src="https://raw.githubusercontent.com/kalindugayanjith/kalindugayanjith/output/github-contribution-grid-snake.svg" alt="snake animation" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&duration=4000&pause=500&color=00F5FF&width=600&lines=Thanks+for+visiting+my+profile!;Have+a+great+day!" alt="Footer Animation" />
 </p>
 
 ---
