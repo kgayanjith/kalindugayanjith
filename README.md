@@ -93,7 +93,7 @@
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=kalindugayanjith&repo=kalindugayanjith&theme=react&bg_color=0D1117&title_color=00F5FF&hide_border=true" />
   </a>
   <a href="https://github.com/kalindugayanjith/chat_bot">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=kalindugayanjith&repo=python_bot&theme=react&bg_color=0D1117&title_color=00F5FF&hide_border=true" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=kalindugayanjith&repo=chat_bot&theme=react&bg_color=0D1117&title_color=00F5FF&hide_border=true" />
   </a>
 </p>
 
