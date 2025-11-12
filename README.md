@@ -1,78 +1,104 @@
-<!-- Header Section -->
-<h1 align="center" style="color: #fff;">Hi 👋, I'm Kalindu Gayanjith</h1>
-<h3 align="center" style="color: #aaa;">Front-end Developer | BSc MIS | MSc AI Student</h3>
+<!-- Header -->
+<h1 align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=28&pause=1000&color=00F5FF&center=true&vCenter=true&width=435&lines=Hey+there!+👋;I'm+Kalindu+Gayanjith!;Front-end+Developer+💻;MSc+AI+Student+🤖" alt="Typing SVG" />
+</h1>
 
-<!-- Profile Image -->
+<!-- Profile Banner -->
 <p align="center">
-  <img src="https://avatars.githubusercontent.com/u/your-github-id?v=4" alt="profile" width="180" style="border-radius: 50%;"/>
-</p>
-
-<!-- Social Media Icons -->
-<p align="center">
-  <a href="https://www.linkedin.com/in/kalindugayanjith/">
-    <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
-  </a>
-  <a href="https://twitter.com/kalindugayanjith">
-    <img alt="Twitter" src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white"/>
-  </a>
-  <a href="mailto:kalindugayanjith@gmail.com">
-    <img alt="Gmail" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
-  </a>
-  <a href="https://kalindugayanjith.github.io/portfolio/">
-    <img alt="Portfolio" src="https://img.shields.io/badge/Portfolio-4CAF50?style=for-the-badge&logo=github&logoColor=white"/>
-  </a>
+  <img src="https://i.imgur.com/zYvxJX5.gif" width="100%" alt="Banner"/>
 </p>
 
 ---
 
 <!-- About Me -->
-## 🌌 About Me
-- 🌱 Learning **Advanced AI & Front-end Development**
-- 👨‍💻 Building web apps with **React, Vue, Laravel**
-- 💬 Ask me about **JS, React, Vue, Git**
-- 📫 Reach me: [kalindugayanjith@gmail.com](mailto:kalindugayanjith@gmail.com)
+### 🧑‍💻 About Me
+> Passionate about crafting modern, responsive web applications  
+> 🎯 Focused on **React, Vue, and Laravel**  
+> 🧠 Learning **AI-driven web experiences**  
+> ✉️ Reach me: **[kalindugayanjith@gmail.com](mailto:kalindugayanjith@gmail.com)**  
 
 ---
 
-<!-- Skills -->
-## 💻 Tech Stack
+<!-- Social Links -->
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=react,vue,js,html,css,laravel,php,python,docker,nodejs" alt="tech stack"/>
+  <a href="https://linkedin.com/in/kalindugayanjith" target="_blank">
+    <img src="https://img.shields.io/badge/-Kalindu%20Gayanjith-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
+  </a>
+  <a href="https://twitter.com/kalindugayanjith" target="_blank">
+    <img src="https://img.shields.io/badge/-@kalindugayanjith-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white"/>
+  </a>
+  <a href="mailto:kalindugayanjith@gmail.com">
+    <img src="https://img.shields.io/badge/-Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
+  </a>
+  <a href="https://kalindugayanjith.github.io/portfolio/" target="_blank">
+    <img src="https://img.shields.io/badge/-Portfolio-111111?style=for-the-badge&logo=github&logoColor=00F5FF"/>
+  </a>
+</p>
+
+---
+
+<!-- Tech Stack -->
+## ⚙️ Tech Stack
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=html,css,js,react,vue,laravel,php,python,nodejs,mysql,figma,git" />
 </p>
 
 ---
 
 <!-- GitHub Stats -->
-## 📊 GitHub Stats
+## 📊 GitHub Overview
 <p align="center">
-  <img height="160em" src="https://github-readme-stats.vercel.app/api?username=kalindugayanjith&show_icons=true&theme=radical&hide_border=true" />
-  <img height="160em" src="https://github-readme-streak-stats.herokuapp.com/?user=kalindugayanjith&theme=radical&hide_border=true"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=kalindugayanjith&show_icons=true&theme=react&hide_border=true&bg_color=0D1117&title_color=00F5FF&icon_color=00F5FF" height="170"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=kalindugayanjith&layout=compact&theme=react&hide_border=true&bg_color=0D1117&title_color=00F5FF" height="170"/>
 </p>
 
 ---
 
-<!-- GitHub Trophies -->
-## 🏆 GitHub Trophies
+<!-- Streak & Trophies -->
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=kalindugayanjith&theme=radical&row=1&column=5" />
+  <img src="https://github-readme-streak-stats.herokuapp.com?user=kalindugayanjith&theme=react&hide_border=true&background=0D1117&ring=00F5FF&fire=00F5FF" width="48%"/>
+  <img src="https://github-profile-trophy.vercel.app/?username=kalindugayanjith&theme=algolia&no-bg=true&no-frame=true&row=1&column=5" width="48%"/>
+</p>
+
+---
+
+<!-- Activity Graph -->
+## 🌌 Contribution Graph
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=kalindugayanjith&bg_color=0D1117&color=00F5FF&line=00F5FF&point=FFFFFF&area=true&hide_border=true" />
 </p>
 
 ---
 
 <!-- Featured Projects -->
-## 🔥 Featured Projects
+## 🚀 Featured Projects
 <p align="center">
   <a href="https://github.com/kalindugayanjith/react-todo">
-    <img src="https://img.shields.io/badge/React-Todo-App-blue?style=for-the-badge&logo=react" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=kalindugayanjith&repo=react-todo&theme=react&bg_color=0D1117&title_color=00F5FF&hide_border=true" />
   </a>
   <a href="https://github.com/kalindugayanjith/email-js">
-    <img src="https://img.shields.io/badge/Email-JS-orange?style=for-the-badge&logo=javascript" />
-  </a>
-  <a href="https://github.com/kalindugayanjith/kalindugayanjith-react">
-    <img src="https://img.shields.io/badge/Portfolio-React-purple?style=for-the-badge&logo=react" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=kalindugayanjith&repo=email-js&theme=react&bg_color=0D1117&title_color=00F5FF&hide_border=true" />
   </a>
 </p>
 
 ---
 
-<!-- Contribution Graph
+<!-- Snake Animation -->
+## 🐍 My Contributions
+<p align="center">
+  <img src="https://raw.githubusercontent.com/kalindugayanjith/kalindugayanjith/output/github-contribution-grid-snake.svg" alt="snake animation" />
+</p>
+
+---
+
+<!-- Footer -->
+<p align="center">
+  <img src="https://i.imgur.com/dBaSKWF.gif" height="20" width="100%">
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/github/followers/kalindugayanjith?label=Followers&style=social" alt="GitHub Badge" />
+  <img src="https://komarev.com/ghpvc/?username=kalindugayanjith&color=00F5FF&style=flat-square&label=Profile+Views"/>
+</p>
+
+<p align="center">✨ “Code. Create. Repeat.” ✨</p>
