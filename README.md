@@ -1,10 +1,10 @@
 <!-- Header Section -->
-<h1 align="center">Hi 👋, I'm Kalindu Gayanjith</h1>
-<h3 align="center">A passionate Front-end Developer | BSc MIS | MSc AI Student</h3>
+<h1 align="center" style="color: #fff;">Hi 👋, I'm Kalindu Gayanjith</h1>
+<h3 align="center" style="color: #aaa;">Front-end Developer | BSc MIS | MSc AI Student</h3>
 
 <!-- Profile Image -->
 <p align="center">
-  <img src="https://avatars.githubusercontent.com/u/your-github-id?v=4" alt="profile" width="200"/>
+  <img src="https://avatars.githubusercontent.com/u/your-github-id?v=4" alt="profile" width="180" style="border-radius: 50%;"/>
 </p>
 
 <!-- Social Media Icons -->
@@ -26,18 +26,18 @@
 ---
 
 <!-- About Me -->
-## About Me
-- 🌱 I’m currently learning **Advanced AI & Front-end Development**
-- 👨‍💻 I love building web applications with **React, Vue, and Laravel**
-- 💬 Ask me about **JavaScript, React, Vue, and Git**
-- 📫 How to reach me: [kalindugayanjith@gmail.com](mailto:kalindugayanjith@gmail.com)
+## 🌌 About Me
+- 🌱 Learning **Advanced AI & Front-end Development**
+- 👨‍💻 Building web apps with **React, Vue, Laravel**
+- 💬 Ask me about **JS, React, Vue, Git**
+- 📫 Reach me: [kalindugayanjith@gmail.com](mailto:kalindugayanjith@gmail.com)
 
 ---
 
 <!-- Skills -->
 ## 💻 Tech Stack
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=react,vue,js,html,css,laravel,php,python" alt="tech stack"/>
+  <img src="https://skillicons.dev/icons?i=react,vue,js,html,css,laravel,php,python,docker,nodejs" alt="tech stack"/>
 </p>
 
 ---
@@ -45,13 +45,21 @@
 <!-- GitHub Stats -->
 ## 📊 GitHub Stats
 <p align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=kalindugayanjith&show_icons=true&theme=tokyonight&hide_border=true" />
-  <img height="180em" src="https://github-readme-streak-stats.herokuapp.com/?user=kalindugayanjith&theme=tokyonight&hide_border=true"/>
+  <img height="160em" src="https://github-readme-stats.vercel.app/api?username=kalindugayanjith&show_icons=true&theme=radical&hide_border=true" />
+  <img height="160em" src="https://github-readme-streak-stats.herokuapp.com/?user=kalindugayanjith&theme=radical&hide_border=true"/>
 </p>
 
 ---
 
-<!-- Projects -->
+<!-- GitHub Trophies -->
+## 🏆 GitHub Trophies
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=kalindugayanjith&theme=radical&row=1&column=5" />
+</p>
+
+---
+
+<!-- Featured Projects -->
 ## 🔥 Featured Projects
 <p align="center">
   <a href="https://github.com/kalindugayanjith/react-todo">
@@ -67,7 +75,4 @@
 
 ---
 
-<!-- Footer -->
-<p align="center">
-  <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="150" />
-</p>
+<!-- Contribution Graph
