@@ -40,7 +40,7 @@
 <!-- Tech Stack -->
 ## ⚙️ Tech Stack
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=html,css,js,react,vue,laravel,php,python,nodejs,mysql,figma,git" />
+  <img src="https://skillicons.dev/icons?i=html,css,js,react,vue,laravel,php,python,mysql,figma,git" />
 </p>
 
 ---
@@ -76,8 +76,8 @@
   <a href="https://github.com/kalindugayanjith/react-todo">
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=kalindugayanjith&repo=react-todo&theme=react&bg_color=0D1117&title_color=00F5FF&hide_border=true" />
   </a>
-  <a href="https://github.com/kalindugayanjith/email-js">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=kalindugayanjith&repo=email-js&theme=react&bg_color=0D1117&title_color=00F5FF&hide_border=true" />
+  <a href="https://github.com/kalindugayanjith/python_bot">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=kalindugayanjith&repo=python_bot&theme=react&bg_color=0D1117&title_color=00F5FF&hide_border=true" />
   </a>
 </p>
 
