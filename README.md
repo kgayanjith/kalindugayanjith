@@ -27,13 +27,10 @@
   <a href="https://linkedin.com/in/kalindugayanjith" target="_blank">
     <img src="https://img.shields.io/badge/-Kalindu%20Gayanjith-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
   </a>
-  <a href="https://twitter.com/kalindugayanjith" target="_blank">
-    <img src="https://img.shields.io/badge/-@kalindugayanjith-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white"/>
-  </a>
   <a href="mailto:kalindugayanjith@gmail.com">
     <img src="https://img.shields.io/badge/-Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
   </a>
-  <a href="https://kalindugayanjith.github.io/portfolio/" target="_blank">
+  <a href="https://kalindugayanjith.vercel.app/portfolio/" target="_blank">
     <img src="https://img.shields.io/badge/-Portfolio-111111?style=for-the-badge&logo=github&logoColor=00F5FF"/>
   </a>
 </p>
