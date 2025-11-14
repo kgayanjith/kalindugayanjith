@@ -37,5 +37,10 @@
 .hero-text{
   text-align: center;
 }
+.navbar-nav {
+  flex-direction: column !important;
+  border: none !important;
+}
+
 }
 

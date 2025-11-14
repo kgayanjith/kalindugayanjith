@@ -6,6 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import { counterItems } from "../../constants/index.js";
 import { bio } from "../../constants/index.js";
+import { Element } from "react-scroll";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -76,62 +77,62 @@ export default function ProfilePage() {
   }, []);
   return (
     <>
-      <div className="section" ref={sectionRef}>
-        <div className="container">
-          <div className="heading-wrapper text-center py-5">
-            <h2 className="section-heading text-white home-page__title">
-              Professional Overview
-            </h2>
-          </div>
-          <div className="row justify-content-center pt-2">
-            <div className="col-10 col-md-4 col-lg-3" ref={profileRef}>
-              <div className="text-center">
-                <div className="imge-wrapper border rounded-circle overflow-hidden p-2 border-2">
-                  <img
-                    src="assets/portfolio-bwr.png"
-                    className="w-100 h-100"
-                    alt=""
-                  />
+      <Element name="profile">
+        <div className="section" ref={sectionRef}>
+          <div className="container">
+            <div className="heading-wrapper text-center py-5">
+              <h2 className="section-heading text-white home-page__title">
+                Professional Overview
+              </h2>
+            </div>
+            <div className="row justify-content-center pt-2">
+              <div className="col-10 col-md-4 col-lg-3" ref={profileRef}>
+                <div className="text-center">
+                  <div className="imge-wrapper border rounded-circle overflow-hidden p-2 border-2">
+                    <img
+                      src="assets/portfolio-bwr.png"
+                      className="w-100 h-100"
+                      alt=""
+                    />
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="wrapper-tag pt-4 text-center" ref={nameRef}>
-              <p className="fs-3 text-white stack">Kalindu Gayanjith</p>
-              <p className="tag-lilne-pro">
-                <span className="px-4 py-1 rounded-5">
-                  Full-Stack Developer | Laravel, React, Vue, Python & Figma
-                </span>
-              </p>
-            </div>
-          </div>
-          <div className="row text-center" ref={bioRef}>
-            <div className="col-md-10 col-lg-8 justify-content-center mx-auto pt-4 text-white">
-              <div className="overview-text">
-                <p>
-                  {bio}
+              <div className="wrapper-tag pt-4 text-center" ref={nameRef}>
+                <p className="fs-3 text-white stack">Kalindu Gayanjith</p>
+                <p className="tag-lilne-pro">
+                  <span className="px-4 py-1 rounded-5">
+                    Full-Stack Developer | Laravel, React, Vue, Python & Figma
+                  </span>
                 </p>
               </div>
             </div>
-          </div>
-          <div
-            className="row justify-content-center pt-5 text-white text-center"
-            ref={counterRef}
-          >
-            {counterItems.map((item, index) => (
-              <div
-                key={index}
-                ref={(el) => el && (countersRef.current[index] = el)}
-                className="col-6 col-md-4 col-lg-3"
-              >
-                <div className="counter-number mb-2 fs-1 fw-bold">
-                  0 {item.suffix}
+            <div className="row text-center" ref={bioRef}>
+              <div className="col-md-10 col-lg-8 justify-content-center mx-auto pt-4 text-white">
+                <div className="overview-text">
+                  <p>{bio}</p>
                 </div>
-                <div className="">{item.label}</div>
               </div>
-            ))}
+            </div>
+            <div
+              className="row justify-content-center pt-5 text-white text-center"
+              ref={counterRef}
+            >
+              {counterItems.map((item, index) => (
+                <div
+                  key={index}
+                  ref={(el) => el && (countersRef.current[index] = el)}
+                  className="col-6 col-md-4 col-lg-3"
+                >
+                  <div className="counter-number mb-2 fs-1 fw-bold">
+                    0 {item.suffix}
+                  </div>
+                  <div className="">{item.label}</div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
-      </div>
+      </Element>
     </>
   );
 }

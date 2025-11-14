@@ -4,6 +4,8 @@ import { useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
+import { Element } from "react-scroll";
+
 
 export default function ProjectPage() {
   const sectionRef = useRef(null);
@@ -45,7 +47,8 @@ export default function ProjectPage() {
   }, []);
   return (
     <>
-      <section ref={sectionRef}>
+   <Element name="projects">
+       <section ref={sectionRef}>
         <div className="container">
           <div className="heading-wrapper text-center py-5 mt-4">
             <h2 className="section-heading text-white home-page__title">
@@ -273,6 +276,7 @@ export default function ProjectPage() {
           </div>
         </div>
       </section>
+   </Element>
     </>
   );
 }
