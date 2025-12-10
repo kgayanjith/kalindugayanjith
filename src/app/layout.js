@@ -8,9 +8,18 @@ export default function MainLayout({ children }) {
       <head>
         <title>Kalindu Gayanjith</title>
         <link rel="icon" href="/favicon.ico" />
-        <meta name="google-site-verification" content="nJg8mApBsm2z1sEZaTvA97xAbUPbc-82QbCvB-UmlG0" />
-        <meta name="description" content="Kalindu Gayanjith - Frontend Developer Portfolio, specialized in Vue, Laravel, React, and modern web development."></meta>
-        <meta name="keywords" content="Kalindu Gayanjith, Portfolio, Developer, Sri Lanka"></meta>
+        <meta
+          name="google-site-verification"
+          content="nJg8mApBsm2z1sEZaTvA97xAbUPbc-82QbCvB-UmlG0"
+        />
+        <meta
+          name="description"
+          content="Kalindu Gayanjith - Frontend Developer Portfolio, specialized in Vue, Laravel, React, and modern web development."
+        ></meta>
+        <meta
+          name="keywords"
+          content="Kalindu Gayanjith, Portfolio, Developer, Sri Lanka"
+        ></meta>
         <link
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
           rel="stylesheet"
@@ -38,6 +47,29 @@ export default function MainLayout({ children }) {
           href="https://fonts.googleapis.com/css2?family=Stack+Sans+Notch:wght@200..700&display=swap"
           rel="stylesheet"
         ></link>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              name: "Kalindu Gayanjith",
+              url: "https://kalindugayanjith.vercel.app",
+              jobTitle: "Software Engineer",
+              sameAs: [
+                "https://www.linkedin.com/in/your-linkedin",
+                "https://github.com/your-github",
+              ],
+              knowsAbout: [
+                "React",
+                "Next.js",
+                "Vue.js",
+                "Laravel",
+                "Frontend Development",
+              ],
+            }),
+          }}
+        />
       </head>
       <body cz-shortcut-listen="true">
         <AppLayout>{children}</AppLayout>
