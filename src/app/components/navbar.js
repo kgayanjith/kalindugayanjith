@@ -64,6 +64,11 @@ export default function Navbar() {
                     Experience
                   </Link>
                 </li>
+                <li className="nav-item">
+                  <Link className="nav-link link-tag" to="/demos">
+                    Demos
+                  </Link>
+                </li>
                 <li className="nav d-none d-lg-block">
                   <Link className="nav-link link-tag" to="hero">
                     <span>
@@ -84,6 +89,11 @@ export default function Navbar() {
                 <li className="nav-item">
                   <Link className="nav-link link-tag" to="education">
                     Education
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link link-tag" to="/blogs">
+                    Blogs
                   </Link>
                 </li>
                 <li className="d-none d-lg-block contact-btn py-1">

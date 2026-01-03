@@ -2,11 +2,20 @@ import "./style.css";
 import "./media.css";
 import AppLayout from "./components/AppLayout";
 
+export const metadata = {
+  title: "Kalindu Gayanjith",
+  description:
+    "I’m a Full-Stack Developer who enjoys turning complex problems into clean, scalable web solutions using React, Next.js, Laravel, and modern UI technologies.",
+      icons: {
+    icon: "/icon.png",
+    
+  },
+};
+
 export default function MainLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <title>Kalindu Gayanjith</title>
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="google-site-verification"
