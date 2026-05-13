@@ -16,7 +16,7 @@ export default function SikllsPage() {
     gsap.fromTo(
       sectionRef.current,
       { opacity: 0 },
-      { opacity: 1, duration: 1.5 }
+      { opacity: 1, duration: 1.5 },
     );
 
     // Animations for each app showcase
@@ -38,7 +38,7 @@ export default function SikllsPage() {
             trigger: card,
             start: "top bottom-=100",
           },
-        }
+        },
       );
     });
   }, []);
@@ -68,6 +68,15 @@ export default function SikllsPage() {
                       Figma, focusing on usability, clarity, and delightful
                       visuals.
                     </p>
+                    <div className="send-wrapper">
+                      <a
+                        className="btn custom-btn-2 mt-4 px-5 py-2"
+                        href="https://www.figma.com/design/amlgeyPPmHkYEe8G4fCMxV/Food-App-UI?node-id=0-1&t=WMwBUkoQzQMbqCGe-1"
+                        target="_blank"
+                      >
+                        See Preview
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -86,6 +95,16 @@ export default function SikllsPage() {
                         <h4 className="project-title fw-bold">
                           Pet Care Management System
                         </h4>
+                        <div className="send-wrapper">
+                      <button
+                        className="btn custom-btn-2 mt-4 px-5 py-2"
+                        href="https://www.figma.com/design/amlgeyPPmHkYEe8G4fCMxV/Food-App-UI?node-id=0-1&t=WMwBUkoQzQMbqCGe-1"
+                        target="_blank"
+                        disabled
+                      >
+                        See Preview
+                      </button>
+                    </div>
                       </div>
                     </div>
                   </div>
@@ -102,6 +121,15 @@ export default function SikllsPage() {
                         <h4 className="project-title fw-bold">
                           Lanka Layouts – Building Documentation Made Simple
                         </h4>
+                        <div className="send-wrapper">
+                      <a
+                        className="btn custom-btn-2 mt-4 px-5 py-2"
+                        href="https://lankalayouts.com/"
+                        target="_blank"
+                      >
+                        See Preview
+                      </a>
+                    </div>
                       </div>
                     </div>
                   </div>

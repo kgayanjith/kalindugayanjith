@@ -221,7 +221,7 @@ export default function ContributionPage() {
                     <div className="col-md-4 col-4">
                       <div className="image-3d">
                         <img
-                          src="assets/lanka_layouts.png"
+                          src="assets/lanka_layouts1.png"
                           className="w-100"
                           alt=""
                         />
