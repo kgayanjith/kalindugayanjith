@@ -3,12 +3,11 @@ import "./media.css";
 import AppLayout from "./components/AppLayout";
 
 export const metadata = {
-  title: "Kalindu Gayanjith",
+  title: "Kalindu Gayanjith | Software Engineer",
   description:
     "I’m a Software Engineer who enjoys turning complex problems into clean, scalable web solutions using React, Next.js, Laravel, and modern UI technologies.",
-      icons: {
+  icons: {
     icon: "/icon.png",
-    
   },
 };
 
@@ -16,7 +15,20 @@ export default function MainLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="icon"
+          type="image/png"
+          href="/favicon-96x96.png"
+          sizes="96x96"
+        />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/apple-touch-icon.png"
+        />
+        <link rel="manifest" href="/site.webmanifest" />
         <meta
           name="google-site-verification"
           content="nJg8mApBsm2z1sEZaTvA97xAbUPbc-82QbCvB-UmlG0"
@@ -29,17 +41,30 @@ export default function MainLayout({ children }) {
               "@type": "Person",
               name: "Kalindu Gayanjith",
               url: "https://kalindugayanjith.vercel.app",
+              image: "https://kalindugayanjith.vercel.app/assets/portfolio-bwr.png",
+              jobTitle: "Software Engineer",
+              nationality: "Sri Lankan",
               jobTitle: "Software Engineer",
               sameAs: [
-                "https://www.linkedin.com/in/your-linkedin",
-                "https://github.com/your-github",
+                "https://www.linkedin.com/in/kalindugayanjith",
+                "https://github.com/kgayanjith",
               ],
+
               knowsAbout: [
-                "React",
+                "React.js",
                 "Next.js",
                 "Vue.js",
                 "Laravel",
+                "JavaScript",
+                "TypeScript",
                 "Frontend Development",
+                "Full Stack Development",
+                "Web Development",
+                "Responsive Design",
+                "UI UX Design",
+                "SEO",
+                "Tailwind CSS",
+                "REST API Integration",
               ],
             }),
           }}

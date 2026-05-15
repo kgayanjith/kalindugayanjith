@@ -112,7 +112,7 @@ export default function SikllsPage() {
                     <div className="project-wrapper" ref={lankalayouuts}>
                       <div className="project-img-wrapper">
                         <img
-                          src="assets/lankalayouts-mockup-removebg-preview.png"
+                          src="assets/mockup2-removebg-preview.png"
                           className="w-100"
                           alt=""
                         />

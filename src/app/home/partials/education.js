@@ -59,10 +59,10 @@ export default function EducationPage() {
                   <div className="edu-section px-4 py-3 h-100" ref={edu_1}>
                     <div className="row align-items-center">
                       <div className="col-md-3 col-6 ps-0 ps-md-2">
-                        <div className="logo-wrapper bg-white p-2 rounded-3 mb-4 mb-md-0">
+                        <div className="logo-wrapper p-2 mb-4 mb-md-0">
                           <img
-                            src="assets/yural.png"
-                            className="w-100"
+                            src="assets/ural.png"
+                            className="w-100 rounded-circle"
                             alt=""
                           />
                         </div>
@@ -92,10 +92,10 @@ export default function EducationPage() {
                   <div className="edu-section px-4 py-3 h-100" ref={edu_2}>
                     <div className="row align-items-center">
                       <div className="col-md-3 col-6 ps-0 ps-md-2">
-                        <div className="logo-wrapper bg-white p-2 rounded-3 mb-4 mb-md-0">
+                        <div className="logo-wrapper p-2 mb-4 mb-md-0">
                           <img
-                            src="assets/dublin.jpg"
-                            className="w-100"
+                            src="assets/ucd.png"
+                            className="w-100 rounded-circle"
                             alt=""
                           />
                         </div>
@@ -125,10 +125,10 @@ export default function EducationPage() {
                   <div className="edu-section px-4 py-3 h-100" ref={edu_3}>
                     <div className="row align-items-center">
                       <div className="col-md-3 col-6 ps-0 ps-md-2">
-                        <div className="logo-wrapper bg-white p-0 rounded-3 mb-4 mb-md-0">
+                        <div className="logo-wrapper p-2 mb-4 mb-md-0">
                           <img
-                            src="assets/school.jpg"
-                            className="w-100 rounded-3"
+                            src="assets/isipathana.png"
+                            className="w-100 rounded-circle"
                             alt=""
                           />
                         </div>

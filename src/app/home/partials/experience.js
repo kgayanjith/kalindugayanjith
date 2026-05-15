@@ -16,7 +16,7 @@ export default function Experience() {
     gsap.fromTo(
       sectionRef.current,
       { opacity: 0 },
-      { opacity: 1, duration: 1.5 }
+      { opacity: 1, duration: 1.5 },
     );
 
     // Animations for each app showcase
@@ -38,7 +38,7 @@ export default function Experience() {
             trigger: card,
             start: "top bottom-=100",
           },
-        }
+        },
       );
     });
   }, []);
@@ -58,9 +58,9 @@ export default function Experience() {
                   <div className="row justify-content-center text-white">
                     <div className="col-md-2 col-3 flexing-col">
                       <div className="company-logo-wrapper p-2 rounded-circle">
-                        <div className="bg-danger p-1 rounded-circle">
+                        <div className="bg-white p-1 rounded-circle">
                           <img
-                            src="assets/self.png"
+                            src="assets/plexxas.png"
                             className="w-100 rounded-circle"
                             alt=""
                           />
@@ -70,34 +70,28 @@ export default function Experience() {
                     </div>
                     <div className="col-md-10 col-9 ">
                       <div className="position-wrapper">
-                        <h3>Freelance Web Developer</h3>
+                        <h3>Associate Software Engineer</h3>
                       </div>
                       <div className="company-wrapper">
-                        <h6>Freelance </h6>
+                        <h6>Plexxas Solution (Pvt) Ltd </h6>
                       </div>
                       <div className="time-wrapper">
-                        <p className="text-secondary">October 2023 - Present</p>
+                        <p className="text-secondary">January 2025 - Present</p>
                       </div>
                       <div className="details-wrapper">
                         <li className="mb-2">
-                          Create visually appealing Figma UI/UX designs and
-                          translate them into high-performance, responsive
-                          websites.
+                          Designed professional architectural layout concepts
+                          and planning solutions based on client requirements
+                          and project specifications.
                         </li>
                         <li className="mb-2">
-                          Collaborate with clients to define project
-                          requirements, integrate APIs, and ensure timely
-                          delivery while maintaining usability and modern design
-                          standards.
+                         Developed reusable and modular components to improve code maintainability, scalability, and development speed.
                         </li>
                         <li className="mb-2">
-                          Implement interactive features using EmailJS,
-                          Vanta.js, and Three.js to enhance user experience.
+                        Diagnosed, debugged, and resolved critical application issues to enhance system stability and user experience.
                         </li>
                         <li className="mb-2">
-                          Optimize performance, troubleshoot issues, and enhance
-                          reliability of web applications to deliver seamless
-                          user experiences.
+                         Participated in full software development lifecycle activities including planning, development, testing, deployment, and maintenance.
                         </li>
                       </div>
                     </div>
