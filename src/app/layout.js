@@ -5,7 +5,31 @@ import AppLayout from "./components/AppLayout";
 export const metadata = {
   title: "Kalindu Gayanjith | Software Engineer",
   description:
-    "I’m a Software Engineer who enjoys turning complex problems into clean, scalable web solutions using React, Next.js, Laravel, and modern UI technologies.",
+    "Software Engineer specializing in React, Next.js, Vue.js, Laravel, and modern web development in Sri Lanka.",
+  metadataBase: new URL("https://kalindugayanjith.vercel.app"),
+
+  openGraph: {
+    title: "Kalindu Gayanjith | Software Engineer",
+    description:
+      "Frontend Developer specializing in React, Next.js, Vue.js, Laravel.",
+    url: "https://kalindugayanjith.vercel.app",
+    siteName: "Kalindu Gayanjith Portfolio",
+    images: [
+      {
+        url: "/assets/portfolio-bwr.png",
+      },
+    ],
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Kalindu Gayanjith | Software Engineer",
+    description:
+      "Frontend Developer specializing in React, Next.js, Vue.js, Laravel.",
+    images: ["/assets/portfolio-bwr.png"],
+  },
+
   icons: {
     icon: "/icon.png",
   },
@@ -15,6 +39,7 @@ export default function MainLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        <meta property="og:site_name" content="Kalindu Gayanjith Portfolio" />
         <link
           rel="icon"
           type="image/png"
@@ -69,10 +94,6 @@ export default function MainLayout({ children }) {
             }),
           }}
         />
-        <meta
-          name="description"
-          content="Kalindu Gayanjith - Frontend Developer Portfolio, specialized in Vue, Laravel, React, and modern web development."
-        ></meta>
         <meta
           name="keywords"
           content="Kalindu Gayanjith, Portfolio, Developer, Sri Lanka"
