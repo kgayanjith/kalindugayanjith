@@ -1,6 +1,7 @@
 import "./style.css";
 import "./media.css";
 import AppLayout from "./components/AppLayout";
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export const metadata = {
   title: "Kalindu Gayanjith | Software Engineer",
@@ -127,7 +128,9 @@ export default function MainLayout({ children }) {
         ></link>
       </head>
       <body cz-shortcut-listen="true">
-        <AppLayout>{children}</AppLayout>
+        <AppLayout>{children}
+         <SpeedInsights />
+        </AppLayout>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.rings.min.js"></script>

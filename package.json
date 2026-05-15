@@ -14,6 +14,7 @@
     "@meadown/scroll-progress-trigger": "^1.1.7",
     "@react-three/drei": "^10.7.6",
     "@react-three/fiber": "^9.4.0",
+    "@vercel/speed-insights": "^2.0.0",
     "framer-motion": "^12.23.24",
     "gsap": "^3.13.0",
     "next": "16.0.7",
