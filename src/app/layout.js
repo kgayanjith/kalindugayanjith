@@ -14,7 +14,7 @@ export const metadata = {
     description:
       "Frontend Developer specializing in React, Next.js, Vue.js, Laravel.",
     url: "https://kalindugayanjith.vercel.app",
-    siteName: "Kalindu Gayanjith Portfolio",
+    siteName: "Kalindu Gayanjith",
     images: [
       {
         url: "/assets/portfolio-bwr.png",
@@ -40,7 +40,6 @@ export default function MainLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <meta property="og:site_name" content="Kalindu Gayanjith Portfolio" />
         <link
           rel="icon"
           type="image/png"
@@ -66,7 +65,7 @@ export default function MainLayout({ children }) {
               "@context": "https://schema.org",
               "@type": "Person",
               name: "Kalindu Gayanjith",
-              url: "https://kalindugayanjith.vercel.app",
+              url: "https://kalindugayanjith.vercel.app/",
               image: "https://kalindugayanjith.vercel.app/assets/portfolio-bwr.png",
               jobTitle: "Software Engineer",
               nationality: "Sri Lankan",
