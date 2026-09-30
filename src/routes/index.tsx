@@ -75,7 +75,7 @@ export const Route = createFileRoute("/")({
     links: [
       {
         rel: "canonical",
-        href: "https://kalindugayanjith.vercel.app/",
+        href: "https://kalindugayanjith.com/",
       },
     ],
     scripts: [

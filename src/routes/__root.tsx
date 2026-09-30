@@ -75,22 +75,66 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
   head: () => ({
     meta: [
-      { charSet: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Devon Heshan — Product & UI/UX Designer" },
+      {
+        charSet: "utf-8",
+      },
+
+      {
+        name: "viewport",
+        content: "width=device-width, initial-scale=1",
+      },
+
+      {
+        title: "Kalindu Gayanjith — UI/UX Designer & Frontend Developer",
+      },
+
       {
         name: "description",
         content:
-          "Portfolio of Devon Heshan, a product and interface designer crafting fast, tactile digital products — mobile apps, SaaS dashboards and brand sites.",
+          "Portfolio of Kalindu Gayanjith, a UI/UX Designer and Frontend Developer from Sri Lanka, specializing in UI/UX design, Figma, web design, mobile app design, and modern frontend development.",
       },
-      { property: "og:title", content: "Devon Heshan — Product & UI/UX Designer" },
+
+      {
+        property: "og:title",
+        content: "Kalindu Gayanjith — UI/UX Designer & Frontend Developer",
+      },
+
       {
         property: "og:description",
         content:
-          "Interfaces that move you — selected product, SaaS and brand work by Devon Heshan.",
+          "Explore UI/UX design, web design, mobile app design, and frontend development projects by Kalindu Gayanjith.",
       },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary_large_image" },
+
+      {
+        property: "og:type",
+        content: "website",
+      },
+
+      {
+        property: "og:url",
+        content: "https://kalindugayanjith.com/",
+      },
+
+      {
+        property: "og:site_name",
+        content: "Kalindu Gayanjith",
+      },
+
+      {
+        name: "twitter:card",
+        content: "summary_large_image",
+      },
+
+      {
+        name: "twitter:title",
+        content: "Kalindu Gayanjith — UI/UX Designer & Frontend Developer",
+      },
+
+      {
+        name: "twitter:description",
+        content:
+          "UI/UX design, web design, mobile app design, and frontend development projects by Kalindu Gayanjith.",
+      },
     ],
     links: [
       { rel: "stylesheet", href: appCss },

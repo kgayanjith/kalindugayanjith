@@ -4,11 +4,7 @@
 
 @custom-variant dark (&:is(.dark *));
 
-/*
- * Design system — "Diagonal frosted motion" portfolio.
- * Dark ink-blue canvas, ice text, single hot-orange accent.
- * Anton for display, Archivo for body, JetBrains Mono for labels.
- */
+
 
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
@@ -79,6 +75,10 @@
   --font-display: "Anton", "Arial Narrow", sans-serif;
   --font-sans: "Archivo", "Helvetica Neue", sans-serif;
   --font-mono: "JetBrains Mono", "SFMono-Regular", monospace;
+}
+
+* {
+  user-select: none !important;
 }
 
 .dark {
