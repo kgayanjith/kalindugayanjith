@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import projectVerdant from "@/assets/project-verdant.jpg";
+import animera from "@/assets/animera.jpeg";
 import resilimart from "@/assets/resili.jpeg";
 import foodzy from "@/assets/food.jpeg";
 import glamaroo from "@/assets/glamaroo.jpeg";
@@ -156,6 +156,8 @@ const NAV_LINKS = [
   { label: "About", href: "#about" },
   { label: "Skills", href: "#skills" },
   { label: "Experience", href: "#experience" },
+  { label: "Projects", href: "#projects" },
+  { label: "Contributions", href: "#contributions" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -356,8 +358,8 @@ const PROJECTS = [
     tagline:
       "System that allows users to register, track, and manage their pets’ health records, appointments, and daily care activities.",
     year: "2024",
-    image: projectVerdant,
-    alt: "Yanko vehicle booking and administration web application",
+    image: animera,
+    alt: "System that allows users to register, track, and manage their pets’ health records, appointments, and daily care activities.",
     flip: false,
     delay: 320,
   },
@@ -390,6 +392,37 @@ const EDUCATION = [
     period: "2019 — 2023",
     degree: "BSc (Hons) in Management Information Systems",
     school: "University College Dublin, Ireland",
+  },
+];
+
+const CONTRIBUTIONS = [
+  {
+    type: "Plexxas Solution (Pvt) Ltd",
+    title: "Yanko.lk Dashboard",
+    period: "2024 — 2025",
+    copy: "Enhanced and optimized an admin dashboard for a vehicle booking system, improving responsiveness and simplifying the management of bookings, drivers, and vehicles.",
+    meta: "Vue.js · Laravel",
+  },
+  {
+    type: "Weblook International (Pvt) Ltd",
+    title: "Yummygle",
+    period: "2024",
+    copy: "Worked on a SaaS-based food delivery platform that connects customers with restaurants while providing vendors with tools to manage menus, orders, and daily operations.",
+    meta: "Laravel · Inertia.js · MySQL",
+  },
+  {
+    type: "Weblook International (Pvt) Ltd",
+    title: "Nikoba",
+    period: "2024",
+    copy: "Developed features for a web-based vehicle auction platform connecting Sri Lankan users with Japanese auctions, supporting vehicle management and online bidding workflows.",
+    meta: "Laravel · Inertia.js · MySQL",
+  },
+  {
+    type: "Weblook International (Pvt) Ltd",
+    title: "Saptify",
+    period: "2024",
+    copy: "Designed and developed a responsive vendor management web application using React, Tailwind CSS, and MUI, integrating backend APIs to create a smooth and user-friendly experience.",
+    meta: "React · Tailwind CSS · MUI",
   },
 ];
 
@@ -900,7 +933,7 @@ function Index() {
           </div>
         </section>
 
-        <section id="github" className="border-y border-line bg-band">
+        <section id="projects" className="border-y border-line bg-band">
         <div className="mx-auto max-w-[90rem] px-5 py-16">
           <div className="flex items-end justify-between gap-4">
             <h2 className="font-display uppercase leading-none tracking-tight text-[clamp(2rem,6vw,4.5rem)]">
@@ -939,6 +972,40 @@ function Index() {
               </a>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section id="contributions" className="mx-auto max-w-[90rem] px-5 py-16">
+        <div className="flex items-end justify-between gap-4">
+          <h2 className="font-display uppercase leading-none tracking-tight text-[clamp(2rem,6vw,4.5rem)]">
+            Other contributions
+          </h2>
+          <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-muted-foreground">
+            More work
+          </span>
+        </div>
+
+        <div className="mt-8 grid gap-3 md:grid-cols-2">
+          {CONTRIBUTIONS.map((item) => (
+            <div
+              key={item.title}
+              className="rounded-card bg-panel p-5 ring-1 ring-black/10 transition-colors duration-300 hover:ring-primary/40"
+            >
+              <div className="flex flex-wrap items-baseline justify-between gap-2">
+                <h3 className="font-display text-xl uppercase leading-none">{item.title}</h3>
+                <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-primary">
+                  {item.period}
+                </span>
+              </div>
+              <p className="mt-1 font-mono text-[11px] uppercase tracking-[0.2em] text-muted-foreground">
+                {item.type}
+              </p>
+              <p className="mt-2 text-pretty text-sm text-muted-foreground">{item.copy}</p>
+              <p className="mt-4 inline-block rounded-full border border-line px-3 py-1 font-mono text-[11px] uppercase tracking-[0.15em] text-foreground">
+                {item.meta}
+              </p>
+            </div>
+          ))}
         </div>
       </section>
 
@@ -1012,7 +1079,7 @@ function Index() {
                     href="#"
                     className="rounded-full border border-primary-foreground/30 px-3 py-1.5 text-xs transition-colors hover:bg-primary-foreground/15"
                   >
-                    Dribbble
+                    Kaggle
                   </a>
                 </div>
               </div>
