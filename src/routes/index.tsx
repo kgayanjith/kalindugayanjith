@@ -112,10 +112,14 @@ export const Route = createFileRoute("/")({
               jobTitle: "Software Engineer, UI/UX Designer & Full Stack Developer",
               description:
                 "Software Engineer, UI/UX Designer and Full Stack Developer based in Colombo, Sri Lanka, working across product design, frontend development, backend development, APIs and modern web applications.",
+              sameAs: ["https://github.com/kgayanjith", "https://www.linkedin.com/in/kalindugayanjith/"],
               address: {
                 "@type": "PostalAddress",
                 addressLocality: "Colombo",
-                addressCountry: "LK",
+                addressCountry: {
+                  "@type": "Country",
+                  name: "Sri Lanka",
+                },
               },
               knowsAbout: [
                 "Software Engineering",
