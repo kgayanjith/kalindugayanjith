@@ -9,12 +9,12 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       {
-        title: "Kalindu Gayanjith | Software Engineer, UI/UX Designer & Full Stack Developer",
+        title: "Kalindu Gayanjith | Software Engineer & UI/UX Designer",
       },
       {
         name: "description",
         content:
-          "Kalindu Gayanjith is a Software Engineer, UI/UX Designer and Full Stack Developer from Colombo, Sri Lanka. He designs and builds digital products across UI/UX, frontend development, backend systems, APIs and modern web applications.",
+          "Kalindu Gayanjith is a Software Engineer and UI/UX Designer from Colombo, Sri Lanka. He designs and builds digital products across UI/UX, frontend development, backend systems, APIs and modern web applications.",
       },
       {
         name: "keywords",
@@ -31,12 +31,12 @@ export const Route = createFileRoute("/")({
       },
       {
         property: "og:title",
-        content: "Kalindu Gayanjith | Software Engineer, UI/UX Designer & Full Stack Developer",
+        content: "Kalindu Gayanjith | Software Engineer and UI/UX Designer",
       },
       {
         property: "og:description",
         content:
-          "Portfolio of Kalindu Gayanjith, a Software Engineer, UI/UX Designer and Full Stack Developer from Colombo, Sri Lanka. Explore software engineering, UI/UX design, frontend development, backend systems and digital products.",
+          "Portfolio of Kalindu Gayanjith, a Software Engineer and UI/UX Designer from Colombo, Sri Lanka. Explore software engineering, UI/UX design, frontend development, backend systems and digital products.",
       },
       {
         property: "og:type",
@@ -70,6 +70,26 @@ export const Route = createFileRoute("/")({
       {
         name: "theme-color",
         content: "#000000",
+      },
+      {
+        property: "og:image",
+        content: "https://kalindugayanjith.com/og-image.PNG",
+      },
+      {
+        property: "og:image:width",
+        content: "1200",
+      },
+      {
+        property: "og:image:height",
+        content: "630",
+      },
+      {
+        property: "og:image:alt",
+        content: "Kalindu Gayanjith Software Engineer portfolio",
+      },
+      {
+        name: "twitter:image",
+        content: "https://kalindugayanjith.com/og-image.PNG",
       },
     ],
     links: [
@@ -568,9 +588,9 @@ function Index() {
               className="anim-rise mt-7 max-w-[52ch] text-pretty text-base text-muted-foreground md:text-lg"
               style={{ animationDelay: "140ms" }}
             >
-              I'm Kalindu Gayanjith, a Software Engineer and UI/UX Designer 
-              from Colombo, Sri Lanka. I design and build digital products across user experience,
-              frontend development, backend systems, APIs and responsive web applications.
+              I'm Kalindu Gayanjith, a Software Engineer and UI/UX Designer from Colombo, Sri Lanka.
+              I design and build digital products across user experience, frontend development,
+              backend systems, APIs and responsive web applications.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-3">
