@@ -85,24 +85,24 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
 
       {
-        title: "Kalindu Gayanjith — UI/UX Designer & Frontend Developer",
+        title: "Kalindu Gayanjith | Software Engineer & UI/UX Designer",
       },
 
       {
         name: "description",
         content:
-          "Portfolio of Kalindu Gayanjith, a UI/UX Designer and Frontend Developer from Sri Lanka, specializing in UI/UX design, Figma, web design, mobile app design, and modern frontend development.",
+          "Portfolio of Kalindu Gayanjith, a Software Engineer and UI/UX Designer from Sri Lanka, specializing in software engineering, UI/UX design, frontend development, backend systems, APIs and modern web applications.",
       },
 
       {
         property: "og:title",
-        content: "Kalindu Gayanjith — UI/UX Designer & Frontend Developer",
+        content: "Kalindu Gayanjith | Software Engineer & UI/UX Designer",
       },
 
       {
         property: "og:description",
         content:
-          "Explore UI/UX design, web design, mobile app design, and frontend development projects by Kalindu Gayanjith.",
+          "Explore software engineering, UI/UX design, frontend development, backend systems and full stack web projects by Kalindu Gayanjith.",
       },
 
       {
@@ -121,19 +121,44 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
 
       {
+        property: "og:image",
+        content: "https://kalindugayanjith.com/og-image.PNG",
+      },
+
+      {
+        property: "og:image:width",
+        content: "1200",
+      },
+
+      {
+        property: "og:image:height",
+        content: "630",
+      },
+
+      {
+        property: "og:image:alt",
+        content: "Kalindu Gayanjith Software Engineer and UI/UX Designer portfolio",
+      },
+
+      {
         name: "twitter:card",
         content: "summary_large_image",
       },
 
       {
         name: "twitter:title",
-        content: "Kalindu Gayanjith — UI/UX Designer & Frontend Developer",
+        content: "Kalindu Gayanjith | Software Engineer & UI/UX Designer",
       },
 
       {
         name: "twitter:description",
         content:
-          "UI/UX design, web design, mobile app design, and frontend development projects by Kalindu Gayanjith.",
+          "Software engineering, UI/UX design, frontend development, backend systems and full stack projects by Kalindu Gayanjith.",
+      },
+
+      {
+        name: "twitter:image",
+        content: "https://kalindugayanjith.com/og-image.PNG",
       },
     ],
     links: [
@@ -175,7 +200,6 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
       <Outlet />
     </QueryClientProvider>
   );
