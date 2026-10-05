@@ -14,7 +14,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Kalindu Gayanjith is a Software Engineer and UI/UX Designer from Colombo, Sri Lanka. He designs and builds digital products across UI/UX, frontend development, backend systems, APIs and modern web applications.",
+          "Kalindu Gayanjith is a Software Engineer and UI/UX Designer from Colombo, Sri Lanka. I design and build digital products with a focus on thoughtful interfaces and modern web development.",
       },
       {
         name: "keywords",
@@ -111,8 +111,11 @@ export const Route = createFileRoute("/")({
               url: "https://kalindugayanjith.com/",
               jobTitle: "Software Engineer, UI/UX Designer & Full Stack Developer",
               description:
-                "Software Engineer, UI/UX Designer and Full Stack Developer based in Colombo, Sri Lanka, working across product design, frontend development, backend development, APIs and modern web applications.",
-              sameAs: ["https://github.com/kgayanjith", "https://www.linkedin.com/in/kalindugayanjith/"],
+                "Software Engineer, UI/UX Designer and Full Stack Developer based in Colombo, Sri Lanka. I design and build digital products across UI/UX, frontend development, backend development, APIs and modern web applications.",
+              sameAs: [
+                "https://github.com/kgayanjith",
+                "https://www.linkedin.com/in/kalindugayanjith/",
+              ],
               address: {
                 "@type": "PostalAddress",
                 addressLocality: "Colombo",
@@ -165,13 +168,14 @@ export const Route = createFileRoute("/")({
                 },
               ],
             },
+
             {
               "@type": "WebSite",
               "@id": "https://kalindugayanjith.com/#website",
               url: "https://kalindugayanjith.com/",
               name: "Kalindu Gayanjith",
               description:
-                "Software Engineer, UI/UX Designer and Full Stack Developer portfolio of Kalindu Gayanjith.",
+                "Portfolio of Kalindu Gayanjith, a Software Engineer, UI/UX Designer and Full Stack Developer based in Colombo, Sri Lanka.",
               author: {
                 "@id": "https://kalindugayanjith.com/#person",
               },
