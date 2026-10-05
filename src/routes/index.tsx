@@ -322,10 +322,10 @@ const GITHUB_REPOS = [
     year: "2026",
     description:
       "React frontend for the pneumonia detection project that connects with the backend API to display prediction results.",
-    language: "Python",
+    language: "JavaScript",
     langColor: "#f1e05a",
     stars: 0,
-    tag: "AI",
+    tag: "React",
     url: "https://github.com/kgayanjith/pneumonia-detection-deep-learning-frontend",
   },
   {
