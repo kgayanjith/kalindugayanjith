@@ -311,10 +311,10 @@ const GITHUB_REPOS = [
     year: "2026",
     description:
       "A CNN built with TensorFlow that detects pneumonia from chest X rays, served through a FastAPI backend.",
-    language: "JavaScript",
-    langColor: "#f1e05a",
+    language: "Python",
+    langColor: "#3572A5",
     stars: 0,
-    tag: "React",
+    tag: "AI",
     url: "https://github.com/kgayanjith/pneumonia-detection-deep-learning",
   },
   {
@@ -323,7 +323,7 @@ const GITHUB_REPOS = [
     description:
       "React frontend for the pneumonia detection project that connects with the backend API to display prediction results.",
     language: "Python",
-    langColor: "#3572A5",
+    langColor: "#f1e05a",
     stars: 0,
     tag: "AI",
     url: "https://github.com/kgayanjith/pneumonia-detection-deep-learning-frontend",
