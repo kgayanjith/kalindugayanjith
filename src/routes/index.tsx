@@ -1,9 +1,16 @@
-import { createFileRoute } from "@tanstack/react-router";
-import animera from "@/assets/animera.jpeg";
-import resilimart from "@/assets/resili.jpeg";
-import foodzy from "@/assets/food.jpeg";
-import glamaroo from "@/assets/glamaroo.jpeg";
-import lankalayouts from "@/assets/lanka.jpeg";
+import { createFileRoute, Link } from "@tanstack/react-router";
+import {
+  SKILLS,
+  EXPERIENCE,
+  GITHUB_REPOS,
+  PROJECTS,
+  SERVICES,
+  SKILL_GROUPS,
+  EDUCATION,
+  CONTRIBUTIONS,
+} from "@/lib/portfolio-data";
+import { SiteFooter, SiteHeader } from "@/components/SiteChrome";
+
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -189,386 +196,13 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const NAV_LINKS = [
-  { label: "Work", href: "#work" },
-  { label: "About", href: "#about" },
-  { label: "Skills", href: "#skills" },
-  { label: "Experience", href: "#experience" },
-  { label: "Projects", href: "#projects" },
-  { label: "Contributions", href: "#contributions" },
-  { label: "Contact", href: "#contact" },
-];
 
-const SKILLS = [
-  "Software Engineering",
-  "UI/UX Design",
-  "Full Stack Development",
-  "Frontend Development",
-  "Backend Development",
-  "Figma",
-  "Web Development",
-  "Mobile App Design",
-];
-
-const SKILL_GROUPS = [
-  {
-    num: "01",
-    title: "Software Engineering",
-    items: [
-      "Full Stack Development",
-      "Software Architecture",
-      "Frontend Development",
-      "Backend Development",
-      "REST APIs",
-      "API Integration",
-      "Database Design",
-      "Web Applications",
-      "Responsive Applications",
-      "Git",
-    ],
-  },
-  {
-    num: "02",
-    title: "UI / UX Design",
-    items: [
-      "UI Design",
-      "UX Design",
-      "User Research",
-      "User Flows",
-      "Wireframing",
-      "Prototyping",
-      "Design Systems",
-      "Usability Testing",
-      "Interaction Design",
-      "Figma",
-    ],
-  },
-  {
-    num: "03",
-    title: "Frontend Development",
-    items: [
-      "Vue.js",
-      "React",
-      "Next.js",
-      "Inertia.js",
-      "Tailwind CSS",
-      "Bootstrap",
-      "HTML / CSS",
-      "JavaScript",
-      "Responsive Design",
-      "Frontend Architecture",
-    ],
-  },
-  {
-    num: "04",
-    title: "Backend & APIs",
-    items: [
-      "Laravel",
-      "PHP",
-      "REST APIs",
-      "MySQL",
-      "Axios",
-      "Jetstream",
-      "Postman",
-      "API Integration",
-      "API Design",
-      "Database Design",
-    ],
-  },
-  {
-    num: "05",
-    title: "Mobile Development",
-    items: [
-      "Flutter",
-      "React Native",
-      "Expo",
-      "Mobile UI",
-      "Responsive UI",
-      "Android Studio",
-      "Xcode",
-      "Cross-platform Development",
-    ],
-  },
-  {
-    num: "06",
-    title: "AI & Emerging Technology",
-    items: [
-      "Artificial Intelligence",
-      "Machine Learning",
-      "AI-powered Products",
-      "AI-assisted Development",
-      "ChatGPT",
-      "GitHub Copilot",
-      "AI Product Concepts",
-      "Emerging Technology",
-    ],
-  },
-];
-
-const GITHUB_REPOS = [
-  {
-    name: "pneumonia-detection-deep-learning",
-    year: "2026",
-    description:
-      "A CNN built with TensorFlow that detects pneumonia from chest X rays, served through a FastAPI backend.",
-    language: "Python",
-    langColor: "#3572A5",
-    stars: 0,
-    tag: "AI",
-    url: "https://github.com/kgayanjith/pneumonia-detection-deep-learning",
-  },
-  {
-    name: "pneumonia-detection-deep-learning-frontend",
-    year: "2026",
-    description:
-      "React frontend for the pneumonia detection project that connects with the backend API to display prediction results.",
-    language: "JavaScript",
-    langColor: "#f1e05a",
-    stars: 0,
-    tag: "React",
-    url: "https://github.com/kgayanjith/pneumonia-detection-deep-learning-frontend",
-  },
-  {
-    name: "face_tracker",
-    year: "2026",
-    description:
-      "Lightweight utility to screen face images for common quality issues before entering face recognition, KYC or profile photo pipelines.",
-    language: "Python",
-    langColor: "#3572A5",
-    stars: 0,
-    tag: "AI",
-    url: "https://github.com/kgayanjith/face_tracker",
-  },
-  {
-    name: "house-price-prediction-neural-network-python",
-    year: "2026",
-    description: "Deep learning house price prediction project using Python and TensorFlow Keras.",
-    language: "Python",
-    langColor: "#3572A5",
-    stars: 0,
-    tag: "AI",
-    url: "https://github.com/kgayanjith/house-price-prediction-neural-network-python",
-  },
-  {
-    name: "chat-bot",
-    year: "2024",
-    description:
-      "Python chatbot built with Flask that uses pattern matching to process user input and generate responses.",
-    language: "Python",
-    langColor: "#3572A5",
-    stars: 0,
-    tag: "AI",
-    url: "https://github.com/kgayanjith/chat_bot",
-  },
-  {
-    name: "productviewgsap",
-    year: "2026",
-    description:
-      "Interactive product experience built to present the APEX Shaker through animation and modern web interactions.",
-    language: "JavaScript",
-    langColor: "#f1e05a",
-    stars: 0,
-    tag: "Next",
-    url: "https://github.com/kgayanjith/productviewgsap",
-  },
-  {
-    name: "gym-management-system",
-    year: "2023",
-    description:
-      "Desktop gym management application built with C# Windows Forms, featuring a modern interface and Azure integration.",
-    language: "C#",
-    langColor: "#178600",
-    stars: 0,
-    tag: "Desktop",
-    url: "https://github.com/kgayanjith/gym-management-system",
-  },
-  {
-    name: "react-todo",
-    year: "2023",
-    description: "React task management application using Bootstrap, React Router and SweetAlert2.",
-    language: "JavaScript",
-    langColor: "#f1e05a",
-    stars: 0,
-    tag: "React",
-    url: "https://github.com/kgayanjith/react-todo",
-  },
-];
-
-const PROJECTS = [
-  {
-    name: "Foodzy mobile app",
-    tagline:
-      "Mobile food ordering app focused on a simple, intuitive and enjoyable user experience.",
-    year: "2026",
-    image: foodzy,
-    alt: "Foodzy mobile food ordering app UI UX design",
-    flip: false,
-    delay: 0,
-    url: "https://www.figma.com/proto/amlgeyPPmHkYEe8G4fCMxV/Food-App-UI?node-id=2003-32&p=f&viewport=987%2C399%2C0.13&t=n0l4RT6gPSnVdvAl-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1",
-  },
-  {
-    name: "ResiliMart",
-    tagline:
-      "AI-powered ERP and supply chain risk intelligence platform for monitoring business risks.",
-    year: "2026",
-    image: resilimart,
-    alt: "ResiliMart AI powered ERP dashboard UI UX design",
-    flip: true,
-    delay: 80,
-    url: "https://resilimart.online/backend/login",
-  },
-  {
-    name: "Glamaroo",
-    tagline:
-      "Beauty service booking experience designed to make discovering and booking services easier.",
-    year: "2026",
-    image: glamaroo,
-    alt: "Glamaroo beauty service booking website UI UX design",
-    flip: false,
-    delay: 160,
-    url: "https://glamaroo.lk/",
-  },
-  {
-    name: "LankaLayouts",
-    tagline:
-      "Responsive website for architectural design and technical documentation services in Sri Lanka.",
-    year: "2025",
-    image: lankalayouts,
-    alt: "LankaLayouts architectural design services website",
-    flip: true,
-    delay: 240,
-    url: "https://lankalayouts.com/",
-  },
-  {
-    name: "Pet Care Management System",
-    tagline:
-      "Pet management system for registering pets and managing health records, appointments and daily care activities.",
-    year: "2024",
-    image: animera,
-    alt: "Pet care management system web application",
-    flip: false,
-    delay: 320,
-    url: "",
-  },
-];
-
-const EXPERIENCE = [
-  {
-    period: "2025 — Present",
-    role: "Associate Software Engineer",
-    company: "Plexxas Solution (Pvt) Ltd",
-    copy: "Working on web applications across software engineering, frontend development, UI implementation, API integration and responsive interfaces. I work with modern development technologies and design tools to turn product ideas and designs into practical digital products.",
-  },
-  {
-    period: "2024 — 2025",
-    role: "Full Stack Developer",
-    company: "Weblook International (Pvt) Ltd",
-    copy: "Worked on production web applications using Vue.js, Laravel, Tailwind CSS and Bootstrap. Built responsive interfaces, integrated REST APIs, worked across frontend and backend features, fixed bugs and collaborated with design and development teams to improve application usability and reliability.",
-  },
-];
-
-const EDUCATION = [
-  {
-    period: "2025 — Present",
-    degree: "MSc in Artificial Intelligence",
-    school: "Ural Federal University, Russia",
-  },
-  {
-    period: "2019 — 2023",
-    degree: "BSc (Hons) in Management Information Systems",
-    school: "University College Dublin, Ireland",
-  },
-];
-
-const CONTRIBUTIONS = [
-  {
-    type: "Plexxas Solution (Pvt) Ltd",
-    title: "Yanko.lk Dashboard",
-    period: "2024 — 2025",
-    copy: "Enhanced and optimized an admin dashboard for a vehicle booking system, improving responsiveness and simplifying the management of bookings, drivers and vehicles.",
-    meta: "Vue.js · Laravel",
-  },
-  {
-    type: "Weblook International (Pvt) Ltd",
-    title: "Yummygle",
-    period: "2024",
-    copy: "Worked on a SaaS based food delivery platform that connects customers with restaurants while providing vendors with tools to manage menus, orders and daily operations.",
-    meta: "Laravel · Inertia.js · MySQL",
-  },
-  {
-    type: "Weblook International (Pvt) Ltd",
-    title: "Nikoba",
-    period: "2024",
-    copy: "Developed features for a web based vehicle auction platform connecting Sri Lankan users with Japanese auctions, supporting vehicle management and online bidding workflows.",
-    meta: "Laravel · Inertia.js · MySQL",
-  },
-  {
-    type: "Weblook International (Pvt) Ltd",
-    title: "Saptify",
-    period: "2024",
-    copy: "Designed and developed a responsive vendor management web application using React, Tailwind CSS and MUI while integrating backend APIs for a smooth user experience.",
-    meta: "React · Tailwind CSS · MUI",
-  },
-];
-
-const SERVICES = [
-  {
-    num: "01",
-    title: "Software Engineering",
-    copy: "Web applications and digital products built across frontend, backend, APIs, databases and practical software architecture.",
-  },
-  {
-    num: "02",
-    title: "UI / UX Design",
-    copy: "User flows, wireframes, prototypes and polished interfaces designed around real users and clear product goals.",
-  },
-  {
-    num: "03",
-    title: "Full Stack Development",
-    copy: "Responsive applications built across frontend and backend technologies including Vue.js, React, Next.js and Laravel.",
-  },
-  {
-    num: "04",
-    title: "Design to Code",
-    copy: "Turning Figma designs into responsive, maintainable interfaces while keeping the original design details and user experience intact.",
-  },
-];
 
 function Index() {
   return (
     <main>
       <div className="min-h-screen bg-background text-foreground font-sans antialiased">
-        <header className="sticky top-0 z-40 flex items-center justify-between border-b border-line bg-background/80 px-5 py-3 backdrop-blur-md">
-          <a
-            href="#"
-            className="font-display text-lg tracking-wide"
-            aria-label="Kalindu Gayanjith home"
-          >
-            KALINDU<span className="text-primary">/</span>GAYANJITH
-          </a>
-
-          <nav
-            className="hidden gap-7 text-[11px] font-medium uppercase tracking-[0.2em] text-muted-foreground md:flex"
-            aria-label="Main navigation"
-          >
-            {NAV_LINKS.map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                className="transition-colors hover:text-primary text-white"
-              >
-                {link.label}
-              </a>
-            ))}
-          </nav>
-
-          <a
-            href="#contact"
-            className="bg-primary px-3 py-2 text-[11px] font-semibold uppercase tracking-[0.2em] text-primary-foreground transition-colors hover:bg-primary-hover rounded-btn"
-          >
-            Available
-          </a>
-        </header>
+      <SiteHeader />
 
         {/* Hero */}
         <section id="home" className="relative overflow-hidden" aria-labelledby="hero-title">
@@ -684,13 +318,13 @@ function Index() {
 
           <div className="mt-8 grid gap-4 md:grid-cols-3">
             {PROJECTS.map((project, i) => (
-              <a
-                key={project.name}
-                href={project.url}
+              <Link
+                key={project.slug}
+                to="/work/$slug"
+                params={{ slug: project.slug }}
                 className="group anim-slide relative overflow-hidden rounded-card bg-panel ring-1 ring-black/10"
                 style={{ animationDelay: `${i * 80}ms` }}
                 aria-label={`View ${project.name} project`}
-                target="_blank"
               >
                 <div
                   className={
@@ -724,7 +358,7 @@ function Index() {
                     <span className="font-mono text-[11px] text-primary">{project.year}</span>
                   </div>
                 </div>
-              </a>
+              </Link>
             ))}
           </div>
         </section>
@@ -1165,17 +799,7 @@ function Index() {
             </div>
           </div>
         </section>
-
-        {/* Footer */}
-        <footer className="border-t border-line">
-          <div className="mx-auto flex max-w-[90rem] flex-wrap items-center justify-between gap-4 px-5 py-8 font-mono text-[11px] uppercase tracking-[0.2em] text-muted-foreground">
-            <span>© 2026 Kalindu Gayanjith</span>
-
-            <span className="text-primary">Software Engineer · UI/UX · Development</span>
-
-            <span>Colombo · Sri Lanka · Remote</span>
-          </div>
-        </footer>
+ <SiteFooter />
       </div>
     </main>
   );

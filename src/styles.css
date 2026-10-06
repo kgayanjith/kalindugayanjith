@@ -197,5 +197,7 @@
   border-radius: calc(0.625rem + 6px);
 }
 
-.gaga{}
+.bg-custom-color{
+  background-color: #0B1120;
+}
 

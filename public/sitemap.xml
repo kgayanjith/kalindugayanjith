@@ -1,9 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
   <url>
     <loc>https://kalindugayanjith.com/</loc>
-    <lastmod>2026-10-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
+    <lastmod>2026-10-06</lastmod>
   </url>
+
+  <url>
+    <loc>https://kalindugayanjith.com/about</loc>
+    <lastmod>2026-10-06</lastmod>
+  </url>
+
+  <url>
+    <loc>https://kalindugayanjith.com/services</loc>
+    <lastmod>2026-10-06</lastmod>
+  </url>
+
+  <url>
+    <loc>https://kalindugayanjith.com/projects</loc>
+    <lastmod>2026-10-06</lastmod>
+  </url>
+
+  <url>
+    <loc>https://kalindugayanjith.com/contact</loc>
+    <lastmod>2026-10-06</lastmod>
+  </url>
+
+  <url>
+    <loc>https://kalindugayanjith.com/blog</loc>
+    <lastmod>2026-10-06</lastmod>
+  </url>
+
+  <!-- Project pages -->
+
+  <url>
+    <loc>https://kalindugayanjith.com/work/foodzy</loc>
+    <lastmod>2026-10-06</lastmod>
+  </url>
+
+  <url>
+    <loc>https://kalindugayanjith.com/work/resilimart</loc>
+    <lastmod>2026-10-06</lastmod>
+  </url>
+
+  <url>
+    <loc>https://kalindugayanjith.com/work/glamaroo</loc>
+    <lastmod>2026-10-06</lastmod>
+  </url>
+
+  <url>
+    <loc>https://kalindugayanjith.com/work/lankalayouts</loc>
+    <lastmod>2026-10-06</lastmod>
+  </url>
+
+  <url>
+    <loc>https://kalindugayanjith.com/work/animera</loc>
+    <lastmod>2026-10-06</lastmod>
+  </url>
+
 </urlset>
