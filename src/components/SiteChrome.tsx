@@ -29,7 +29,7 @@ export function SiteHeader() {
               <a
                 key={link.label}
                 href={link.to}
-                className="transition-colors hover:text-primary"
+                className="transition-colors duration-200 hover:text-primary"
               >
                 {link.label}
               </a>
@@ -38,7 +38,7 @@ export function SiteHeader() {
                 key={link.label}
                 to={link.to}
                 activeProps={{ className: "text-primary" }}
-                className="transition-colors hover:text-primary"
+                className="transition-colors duration-200 hover:text-primary"
               >
                 {link.label}
               </Link>
@@ -46,43 +46,40 @@ export function SiteHeader() {
           )}
         </nav>
 
-        {/* Header actions */}
+        {/* Actions */}
         <div className="flex shrink-0 items-center gap-2">
           <Link
             to="/contact"
-            className="hidden rounded-btn bg-primary px-3 py-2 text-[11px] font-semibold uppercase tracking-[0.2em] text-primary-foreground transition-colors hover:bg-primary-hover sm:inline-block"
+            className="hidden rounded-btn bg-primary px-3 py-2 text-[11px] font-semibold uppercase tracking-[0.2em] text-primary-foreground transition-colors duration-200 hover:bg-primary-hover sm:inline-block"
           >
             Available
           </Link>
 
-          {/* Mobile hamburger */}
+          {/* Mobile menu button */}
           <button
             type="button"
             aria-label={menuOpen ? "Close menu" : "Open menu"}
             aria-expanded={menuOpen}
             onClick={() => setMenuOpen((open) => !open)}
-            className="grid h-10 w-10 place-items-center rounded-btn border border-line text-foreground transition-colors duration-300 hover:border-primary hover:text-primary md:hidden"
+            className="grid h-10 w-10 place-items-center rounded-btn border border-line text-foreground transition-colors duration-200 hover:border-primary hover:text-primary md:hidden"
           >
             <span className="relative block h-3.5 w-5">
-              {/* Top line */}
               <span
-                className={`absolute left-0 top-0 h-[2px] w-full bg-current transition-all duration-300 ease-out ${
+                className={`absolute left-0 top-0 h-[2px] w-full bg-current transition-transform duration-200 ${
                   menuOpen
                     ? "translate-y-[6px] rotate-45"
                     : "translate-y-0 rotate-0"
                 }`}
               />
 
-              {/* Middle line */}
               <span
-                className={`absolute left-0 top-1/2 h-[2px] w-full -translate-y-1/2 bg-current transition-all duration-200 ${
-                  menuOpen ? "scale-x-0 opacity-0" : "scale-x-100 opacity-100"
+                className={`absolute left-0 top-1/2 h-[2px] w-full -translate-y-1/2 bg-current transition-opacity duration-150 ${
+                  menuOpen ? "opacity-0" : "opacity-100"
                 }`}
               />
 
-              {/* Bottom line */}
               <span
-                className={`absolute bottom-0 left-0 h-[2px] w-full bg-current transition-all duration-300 ease-out ${
+                className={`absolute bottom-0 left-0 h-[2px] w-full bg-current transition-transform duration-200 ${
                   menuOpen
                     ? "-translate-y-[6px] -rotate-45"
                     : "translate-y-0 rotate-0"
@@ -95,51 +92,39 @@ export function SiteHeader() {
 
       {/* Mobile menu */}
       <div
-        className={`grid transition-[grid-template-rows,opacity] duration-300 ease-out md:hidden ${
+        className={`overflow-hidden transition-[max-height,opacity] duration-250 ease-out md:hidden ${
           menuOpen
-            ? "grid-rows-[1fr] opacity-100"
-            : "grid-rows-[0fr] opacity-0"
+            ? "max-h-[420px] opacity-100"
+            : "max-h-0 opacity-0"
         }`}
       >
-        <div className="overflow-hidden">
-          <nav
-            aria-label="Mobile navigation"
-            className="mt-3 flex flex-col border-t border-line pt-1"
-          >
-            {NAV_LINKS.map((link, index) => {
-              const itemStyle = {
-                transitionDelay: menuOpen ? `${index * 45}ms` : "0ms",
-                transform: menuOpen
-                  ? "translateY(0)"
-                  : "translateY(-10px)",
-                opacity: menuOpen ? 1 : 0,
-              };
-
-              return link.to.startsWith("/#") ? (
-                <a
-                  key={link.label}
-                  href={link.to}
-                  onClick={() => setMenuOpen(false)}
-                  className="border-b border-line py-3 text-xs font-medium uppercase tracking-[0.2em] text-muted-foreground transition-all duration-300 ease-out last:border-b-0 hover:text-primary"
-                  style={itemStyle}
-                >
-                  {link.label}
-                </a>
-              ) : (
-                <Link
-                  key={link.label}
-                  to={link.to}
-                  activeProps={{ className: "text-primary" }}
-                  onClick={() => setMenuOpen(false)}
-                  className="border-b border-line py-3 text-xs font-medium uppercase tracking-[0.2em] text-muted-foreground transition-all duration-300 ease-out last:border-b-0 hover:text-primary"
-                  style={itemStyle}
-                >
-                  {link.label}
-                </Link>
-              );
-            })}
-          </nav>
-        </div>
+        <nav
+          aria-label="Mobile navigation"
+          className="mt-3 flex flex-col border-t border-line pt-1"
+        >
+          {NAV_LINKS.map((link) =>
+            link.to.startsWith("/#") ? (
+              <a
+                key={link.label}
+                href={link.to}
+                onClick={() => setMenuOpen(false)}
+                className="border-b border-line py-3 text-xs font-medium uppercase tracking-[0.2em] text-muted-foreground transition-colors duration-200 last:border-b-0 hover:text-primary"
+              >
+                {link.label}
+              </a>
+            ) : (
+              <Link
+                key={link.label}
+                to={link.to}
+                activeProps={{ className: "text-primary" }}
+                onClick={() => setMenuOpen(false)}
+                className="border-b border-line py-3 text-xs font-medium uppercase tracking-[0.2em] text-muted-foreground transition-colors duration-200 last:border-b-0 hover:text-primary"
+              >
+                {link.label}
+              </Link>
+            ),
+          )}
+        </nav>
       </div>
     </header>
   );
