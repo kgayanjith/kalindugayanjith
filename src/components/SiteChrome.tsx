@@ -1,41 +1,124 @@
 import { Link } from "@tanstack/react-router";
-import type { ReactNode } from "react";
+import { useState, type ReactNode } from "react";
 import { NAV_LINKS } from "@/lib/portfolio-data";
 
-export function SiteHeader() {
-  return (
-       <header className="sticky top-0 z-40 flex items-center justify-between border-b border-line bg-background/80 px-5 py-3 backdrop-blur-md">
-          <Link
-            to="/"
-            className="font-display text-lg tracking-wide"
-            aria-label="Kalindu Gayanjith home"
-          >
-            KALINDU<span className="text-primary">/</span>GAYANJITH
-          </Link>
 
-          <nav
-            className="hidden gap-7 text-[11px] font-medium uppercase tracking-[0.2em] text-muted-foreground md:flex"
-            aria-label="Main navigation"
-          >
-            {NAV_LINKS.map((link) => (
+export function SiteHeader() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const navLinks = NAV_LINKS.map((link) =>
+    link.to.startsWith("/#") ? (
+      <a
+        key={link.label}
+        href={link.to}
+        onClick={() => setMenuOpen(false)}
+        className="border-b border-line py-3 text-xs font-medium uppercase tracking-[0.2em] text-muted-foreground transition-colors last:border-b-0 hover:text-primary"
+      >
+        {link.label}
+      </a>
+    ) : (
+      <Link
+        key={link.label}
+        to={link.to}
+        activeProps={{ className: "text-primary" }}
+        onClick={() => setMenuOpen(false)}
+        className="border-b border-line py-3 text-xs font-medium uppercase tracking-[0.2em] text-muted-foreground transition-colors last:border-b-0 hover:text-primary"
+      >
+        {link.label}
+      </Link>
+    ),
+  );
+
+  return (
+    <header className="sticky top-0 z-40 border-b border-line bg-background/80 px-5 py-3 backdrop-blur-md">
+      <div className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-3 sm:flex sm:justify-between">
+        {/* Logo */}
+        <Link
+          to="/"
+          onClick={() => setMenuOpen(false)}
+          className="min-w-0 truncate font-display text-lg tracking-wide"
+          aria-label="Kalindu Gayanjith — Home"
+        >
+          KALINDU<span className="text-primary">/</span>GAYANJITH
+        </Link>
+
+        {/* Desktop navigation */}
+        <nav
+          aria-label="Main navigation"
+          className="hidden gap-7 text-[11px] font-medium uppercase tracking-[0.2em] text-muted-foreground md:flex"
+        >
+          {NAV_LINKS.map((link) =>
+            link.to.startsWith("/#") ? (
+              <a
+                key={link.label}
+                href={link.to}
+                className="transition-colors hover:text-primary"
+              >
+                {link.label}
+              </a>
+            ) : (
               <Link
                 key={link.label}
                 to={link.to}
-                 activeProps={{ className: "text-primary" }}
-                className="transition-colors hover:text-primary "
+                activeProps={{ className: "text-primary" }}
+                className="transition-colors hover:text-primary"
               >
                 {link.label}
               </Link>
-            ))}
-          </nav>
+            ),
+          )}
+        </nav>
 
+        {/* Header actions */}
+        <div className="flex shrink-0 items-center gap-2">
           <Link
             to="/contact"
-            className="bg-primary px-3 py-2 text-[11px] font-semibold uppercase tracking-[0.2em] text-primary-foreground transition-colors hover:bg-primary-hover rounded-btn"
+            className="hidden rounded-btn bg-primary px-3 py-2 text-[11px] font-semibold uppercase tracking-[0.2em] text-primary-foreground transition-colors hover:bg-primary-hover sm:inline-block"
           >
             Available
           </Link>
-        </header>
+
+          {/* Mobile menu button */}
+          <button
+            type="button"
+            aria-label={menuOpen ? "Close menu" : "Open menu"}
+            aria-expanded={menuOpen}
+            onClick={() => setMenuOpen((open) => !open)}
+            className="grid h-10 w-10 place-items-center rounded-btn border border-line text-foreground transition-colors hover:border-primary hover:text-primary md:hidden"
+          >
+            <span className="relative block h-3.5 w-5">
+              <span
+                className={`absolute left-0 top-0 h-[2px] w-full bg-current transition-transform duration-300 ${
+                  menuOpen ? "translate-y-[6px] rotate-45" : ""
+                }`}
+              />
+
+              <span
+                className={`absolute left-0 top-1/2 h-[2px] w-full -translate-y-1/2 bg-current transition-opacity duration-200 ${
+                  menuOpen ? "opacity-0" : ""
+                }`}
+              />
+
+              <span
+                className={`absolute bottom-0 left-0 h-[2px] w-full bg-current transition-transform duration-300 ${
+                  menuOpen ? "-translate-y-[6px] -rotate-45" : ""
+                }`}
+              />
+            </span>
+          </button>
+        </div>
+      </div>
+
+      {/* Mobile navigation */}
+      {menuOpen ? (
+        <nav
+          aria-label="Mobile navigation"
+          className="mt-3 flex flex-col border-t border-line pt-1 md:hidden"
+        >
+          {navLinks}
+        </nav>
+      ) : null}
+    </header>
   );
 }
 
