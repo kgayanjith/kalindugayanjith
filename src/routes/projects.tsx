@@ -180,7 +180,8 @@ function ProjectsPage() {
           {GITHUB_REPOS.map((repo, i) => (
             <a
               key={repo.name}
-              href="#"
+              href={repo.url}
+              target="_blank"
               className="anim-slide group rounded-card bg-panel p-5 ring-1 ring-black/10 transition-all duration-300 hover:ring-primary/40"
               style={{ animationDelay: `${i * 60}ms` }}
             >
